@@ -683,19 +683,19 @@ section,
   border-radius: 18px;
   border-bottom: 5px solid var(--surface-color);
   height: 100%;
+  text-align: center; /* asegura que todo el contenido esté centrado */
 }
 
 .services .service-item .icon {
   color: var(--contrast-color);
   background: var(--accent-color);
-  margin: 0;
   width: 64px;
   height: 64px;
-  border-radius: 50px;
+  border-radius: 50%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
+  align-items: center;    /* centra verticalmente el ícono */
+  justify-content: center; /* centra horizontalmente el ícono */
+  margin: 0 auto 20px auto; /* centra el círculo y agrega espacio abajo */
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
