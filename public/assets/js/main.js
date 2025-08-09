@@ -1,10 +1,3 @@
-/**
-* Template Name: Siimple
-* Template URL: https://bootstrapmade.com/free-bootstrap-landing-page/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 (function() {
   "use strict";
@@ -143,3 +136,12 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+document.addEventListener("scroll", function () {
+  const whatsappBtn = document.querySelector(".whatsapp-float");
+  if (window.scrollY > window.innerHeight) { // Después de una pantalla
+    whatsappBtn.classList.add("show");
+  } else {
+    whatsappBtn.classList.remove("show");
+  }
+});
