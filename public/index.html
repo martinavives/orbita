@@ -265,50 +265,57 @@
               <small>Inspiración de viajes y contenido exclusivo</small>
             </div>
           </div><!-- End Info Item -->
-
-
-
         </div>
-        <!-- Contact Form -->
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
-          <div class="row gy-4">
 
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Nombre" required>
-            </div>
+<!-- Contact Form -->
+<form action="https://formspree.io/f/mwpqagyv" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="300" accept-charset="UTF-8">
+  <div class="row gy-4">
 
-            <div class="col-md-6">
-              <input type="text" name="lastname" class="form-control" placeholder="Apellido" required>
-            </div>
+    <div class="col-md-6">
+      <input type="text" name="name" class="form-control" placeholder="Nombre" required>
+    </div>
 
-            <div class="col-md-12">
-              <input type="email" class="form-control" name="email" placeholder="Email" required>
-            </div>
+    <div class="col-md-6">
+      <input type="text" name="lastname" class="form-control" placeholder="Apellido" required>
+    </div>
 
-            <div class="col-md-12">
-              <select name="subject" class="form-control" required>
-                <option value="">Seleccioná un asunto</option>
-                <option>Consulta General</option>
-                <option>Planificación de Viaje</option>
-                <option>Reserva Existente</option>
-              </select>
-            </div>
+    <div class="col-md-12">
+      <input type="email" class="form-control" name="email" placeholder="Email" required>
+    </div>
 
-            <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Contanos sobre tu destino soñado..."
-                required></textarea>
-            </div>
+    <div class="col-md-12">
+      <select name="subject" class="form-control" required>
+        <option value="">Seleccioná un asunto</option>
+        <option>Consulta General</option>
+        <option>Planificación de Viaje</option>
+        <option>Reserva Existente</option>
+      </select>
+    </div>
 
-            <div class="col-md-12 text-center">
-              <div class="loading">Cargando</div>
-              <div class="error-message"></div>
-              <div class="sent-message">¡Tu mensaje ha sido enviado. Gracias!</div>
+    <div class="col-md-12">
+      <textarea class="form-control" name="message" rows="6" placeholder="Contanos sobre tu destino soñado..." required></textarea>
+    </div>
 
-              <button type="submit">Enviar Mensaje</button>
-            </div>
+    <!-- Extras para Formspree -->
+    <input type="hidden" name="_subject" value="Nuevo mensaje desde el sitio">
+    <!-- Cambiá /gracias.html si querés otra página -->
+    <input type="hidden" name="_redirect" value="/gracias.html">
+    <!-- Honeypot anti-spam -->
+    <input type="text" name="_gotcha" style="display:none">
 
-          </div>
-        </form><!-- End Contact Form -->
+    <div class="col-md-12 text-center">
+      <!-- Estos mensajes eran del PHP; con redirect no se usan -->
+      <!-- <div class="loading">Cargando</div>
+      <div class="error-message"></div>
+      <div class="sent-message">¡Tu mensaje ha sido enviado. Gracias!</div> -->
+
+      <button type="submit">Enviar Mensaje</button>
+    </div>
+
+  </div>
+</form><!-- End Contact Form -->
+
+
 
         <!-- Schedule Info -->
         <div class="mt-5 text-center text-muted">
