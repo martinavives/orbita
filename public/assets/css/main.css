@@ -530,10 +530,20 @@ section,
   z-index: 1;
 }
 
+.hero > img.hero-bg {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
 .hero .container {
   position: relative;
   z-index: 3;
 }
+
 
 .hero h2 {
   margin: 0;
@@ -573,8 +583,6 @@ section,
     font-size: 18px;
   }
 }
-
-
 
 
 /*--------------------------------------------------------------
