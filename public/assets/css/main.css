@@ -930,3 +930,25 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+  /* plans section */
+
+.plan-card {
+  border-radius: 1rem;
+  box-shadow: 0 10px 24px rgba(0,0,0,.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.plan-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 14px 28px rgba(0,0,0,.1);
+}
+
+.plan-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.plan-card a.btn {
+  margin-top: auto;   /* fuerza al botón a irse hacia abajo */
+}
